@@ -51,7 +51,7 @@ public class TokenScanner {
     /**
      * The scan method passes the source file line by line into the token
      * processor to recognize language tokens. When the end of the file is
-     * reached, the scanner submits and end of line character to the parser and
+     * reached, the scanner submits an end of line character to the parser and
      * signals the code generator to begin writing the intermediate code to an
      * output file.
      */

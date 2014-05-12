@@ -122,10 +122,11 @@ public class Generator {
              * line.
              */
             case 24:
+                op1 = gs.getT();
                 if (sym.getType(op1).matches("CHAR")) {
-                    char c = sym.getValue(op1).charAt(0);
-                    int ic = (int) c;
-                    op1 = String.valueOf(ic);
+                    //char c = sym.getValue(op1).charAt(0);
+                    //int ic = (int) c;
+                    //op1 = String.valueOf(ic);
                     output[line] = new Quad(line, "SYS", "-2", op1, "");
                     line++;
                 } else {
@@ -142,9 +143,9 @@ public class Generator {
             case 25:
                 op1 = gs.getT();
                 if (sym.getType(op1).matches("CHAR")) {
-                    char c = sym.getValue(op1).charAt(0);
-                    int ic = (int) c;
-                    op1 = String.valueOf(ic);
+                    //char c = sym.getValue(op1).charAt(0);
+                    //int ic = (int) c;
+                    //op1 = String.valueOf(ic);
                     output[line] = new Quad(line, "SYS", "-2", op1, "");
                     line++;
                 } else if (sym.getType(op1).matches("VARCHAR2")) {
