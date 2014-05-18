@@ -7,7 +7,7 @@ DECLARE
 BEGIN
 	WHILE a>b LOOP
 		BEGIN
-			a:=a-50;
+			a:=a-50+30;
 			DBMS_OUTPUT.PUT(a);
 			DBMS_OUTPUT.NEW_LINE;
 			b:=8;

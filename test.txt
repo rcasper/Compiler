@@ -1,0 +1,10 @@
+DECLARE
+	a POSITIVE(3):=25;
+BEGIN
+	WHILE a>5 LOOP
+		BEGIN
+			DBMS_OUTPUT.PUT_LINE(a);
+			a:=a-5;
+		END;
+	END LOOP;
+END;\

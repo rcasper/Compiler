@@ -175,7 +175,6 @@ public class Generator {
              * that would be executed if the condition is false.
              */
             case 28:
-		loopBack.pop();
                 output[needPatch.pop()].a3 = String.valueOf(line);
                 break;
             /*
